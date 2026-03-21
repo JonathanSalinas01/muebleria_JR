@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>Mueblería Jorge Rodriguez</title>
 </head>
 <body class="bg-orange-50">
@@ -26,8 +25,13 @@
         </div>
     </div>
     </section>
-    <section class="bg-blue-700">
+    <section class="bg-azul-oscuro">
         <h2 class="text-4xl text-zinc-100 font-bold p-2 text-center">Destacados</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
+            @foreach ($productos as $producto)
+                <x-card :producto="$producto" />
+            @endforeach
+        </div>
     </section>
 
     </main>
