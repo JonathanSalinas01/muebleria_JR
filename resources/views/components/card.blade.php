@@ -1,3 +1,5 @@
+@props(['producto'])
+
 <div class="rounded-2xl h-full">
     
     <div class="bg-fondo-tarjeta mt-3 flex flex-col h-full max-w-sm p-4 border border-default rounded-2xl shadow-xs">

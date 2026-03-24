@@ -22,5 +22,6 @@ class Productos extends Model
         'descripcion',
         'precio',
         'imagen',
+        'id_categoria',
     ];
 }

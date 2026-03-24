@@ -1,5 +1,5 @@
 <div>
-    <nav class="bg-neutral-primary w-full z-20 top-0 start-0 border-b border-default">
+    <nav class="bg-marrron-header w-full z-20 top-0 start-0 border-b border-default">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="{{asset('images/logo_muebleria.png')}}" class="h-24" alt="Logo de la mueblería">
@@ -15,10 +15,10 @@
       <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-default rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary">
 
         <li>
-          <a href="#" class="block py-2 px-3 text-heading font-semibold rounded hover:bg-neutral-tertiary hover:text-blue-600 md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Inicio</a>
+          <a href="{{ url('/') }}" class="block py-2 px-3 text-heading font-semibold rounded hover:bg-neutral-tertiary hover:text-blue-600 md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Inicio</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-heading font-semibold  rounded hover:bg-neutral-tertiary hover:text-blue-600  md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Colecciones</a>
+          <a href="{{ route('colecciones') }}" class="block py-2 px-3 text-heading font-semibold  rounded hover:bg-neutral-tertiary hover:text-blue-600  md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Colecciones</a>
         </li>
         <li>
           <a href="#" class="block py-2 px-3 text-heading font-semibold  rounded hover:bg-neutral-tertiary hover:text-blue-600 md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Pedidos</a>
