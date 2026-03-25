@@ -13,3 +13,7 @@ Route::get('/colecciones', function () {
 }) ->name('colecciones');
 
 Route::get('/colecciones', [ProductoController::class, 'Obtenercolecciones'])->name('colecciones');
+
+Route::get('/pedidos', function () {
+    return view('pedidos');
+}) ->name('pedidos');

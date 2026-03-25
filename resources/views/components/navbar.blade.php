@@ -21,7 +21,7 @@
           <a href="{{ route('colecciones') }}" class="block py-2 px-3 text-heading font-semibold  rounded hover:bg-neutral-tertiary hover:text-blue-600  md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Colecciones</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-heading font-semibold  rounded hover:bg-neutral-tertiary hover:text-blue-600 md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Pedidos</a>
+          <a href="{{ route('pedidos') }}" class="block py-2 px-3 text-heading font-semibold  rounded hover:bg-neutral-tertiary hover:text-blue-600 md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Pedidos</a>
         </li>
       </ul>
     </div>
