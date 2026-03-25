@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProductoController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PedidoController;
 
 Route::get('/', function () {
     return view('index');
@@ -17,3 +18,6 @@ Route::get('/colecciones', [ProductoController::class, 'Obtenercolecciones'])->n
 Route::get('/pedidos', function () {
     return view('pedidos');
 }) ->name('pedidos');
+
+
+Route::post('/enviar-pedido', [PedidoController::class, 'enviar'])->name('pedido.enviar');
